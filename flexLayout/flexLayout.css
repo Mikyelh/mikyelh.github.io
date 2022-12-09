@@ -1,0 +1,163 @@
+:root{
+    box-sizing: border-box;
+}
+*,::before,::after{
+    box-sizing: inherit;
+}
+body * + *{
+    margin-top: 1.5em;
+}
+.container{
+    max-width: 1000px;
+    margin:0 auto;
+}
+/* custom css*/
+body{
+    background-color: #709b90;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul.site-nav{
+    display: flex;
+    padding:.5em;
+    list-style-type: none;
+    background-color:#5f4b44;
+    border-radius: .2em;
+}
+
+ul.site-nav>li{
+    margin-top: 0;
+}
+ul.site-nav>li>a{
+    display: block;
+    padding: .5em 1em;
+    background-color: #cc665a;
+    color: white;
+    text-decoration: none;
+
+
+}
+ul.site-nav>li>a:hover{
+    background-color: rgb(245, 245, 68);
+}
+
+ul.site-nav>li + li{
+    margin-left: .5em;
+}
+ul.site-nav>.nav-right{
+    margin-left: auto;
+}
+/* main*/
+/*flex container*/
+main{
+    display:flex ;
+}
+/* flex item*/
+main > * + *{
+    margin-top: 0;
+    margin-left: 1.5em;
+}
+.tile{
+    background-color: white;
+    padding: 1.5em;
+}
+.tile :first-child{
+    margin-top: 0;
+}
+.column-main{
+    flex: 3;
+}
+.column-sidebar{
+    flex: 1;
+}
+.column-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+.column-sidebar>.tile{
+    display: flex;
+    flex-direction: column;
+}
+.column-sidebar>.tile{
+    flex: 1;
+}
+
+
+.login-form h3{
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+}
+.login-form label{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+.login-form input[type="text"], .login-form input[type="password"]{
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    border: 1px solid #dedede;
+    padding: .5em 1em;
+
+}
+.login-form input[type="button"]{
+    display: block;
+    border: 1px solid #cc6b5a;
+    padding: .5em  1em;
+    background-color:white;
+    
+    
+
+}
+.centered{
+    text-align: center;
+}
+.special-offer{
+    display: flex;
+    flex-direction: column;
+
+}
+.cost{
+    /*used to automaticaly item*/
+    margin-top: auto;
+    padding: 1.5em 0;
+}
+
+.cost{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cost > span{
+    display: block;
+    margin-top: 0;
+    line-height: .6;
+}
+*/  
+.cost-currency{
+    font-size: 2em;
+}
+.cost-dollars{
+    font-size: 4em;
+}
+.cost-cents{
+    font-size: 1.5em;
+    align-self: flex-start   ;
+}
+a.cta-button{
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    text-decoration: none;
+    padding: .5em 1em;
+    background-color: #cc665a;
+    color: white;
+}
+
+ 
