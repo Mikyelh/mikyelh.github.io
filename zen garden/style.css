@@ -1,0 +1,21 @@
+
+@import url(AdobeStock_24755998_Preview.jpeg);
+@import "header.css";
+@import "main.css";
+@charset "UTF-8";
+
+
+footer{
+    display: block;
+    position:absolute;
+    top:525px;
+    z-index:2;
+    
+
+}
+ footer a{
+    display: inline-block;
+    background: black;
+    padding: 10px;
+
+ }

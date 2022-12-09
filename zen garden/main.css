@@ -1,0 +1,49 @@
+body{
+    margin: 20px;
+    padding: 50px;
+    border-top-left-radius:30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius: 30px;
+}
+
+h1{
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,cursive;
+    text-align:right;
+    text-align: top;
+   
+
+}
+h2,h3,h4.h5.h6{
+    font-size:30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,cursive;
+    color: blue;
+    font-size: 2em;
+    text-decoration: underline;
+
+}
+.page-wrapper{
+    background-color:bisque;
+    padding: 40px;
+}
+h2{
+    text-align: right;
+}
+a:link {color: green;
+
+}
+a:checked{
+    color:red;
+
+}
+a:visited{
+    color:yellow;
+}
+
+    
+
+
+
+ 
+ 

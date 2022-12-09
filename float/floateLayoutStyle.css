@@ -1,0 +1,104 @@
+/*
+foundetion
+*/
+
+
+:root{
+    box-sizing:border-box ;
+
+}
+
+*,::after,::before{
+    box-sizing: inherit;
+
+}
+ 
+body * + *{
+    margin-top: 1.5em;
+
+}
+/* 
+generic rules
+*/
+
+body{
+    background: #bbb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header,footer{
+    background-color: #0072b0;
+    color: white;
+    padding: .5em 1.5em;
+     
+}
+footer{
+    font-size: larger;
+}
+main{
+    background-color: white;
+    padding: 0 1.5em 1.5em 1.5em;
+}
+header,main,footer,article{
+    border-radius: .5em;
+
+}
+article h3{
+    margin: 0;
+}
+/*
+layout
+*/
+/*double container pattern*/
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+article{
+    float: left;
+    width: 50%;
+}
+/* clearfix*/
+section::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/*article*/
+
+main section div article:first-child{
+    margin-top: 1.5em;
+}
+main section div article:nth-child(2n+1){
+    
+    margin-right: 1.5em;
+}
+main section div article{
+    width: calc(50% - (1.5em/2));
+}
+article{
+    background-color:#ededed;
+    padding: 1.5em;
+}
+
+section > *:first-child{
+    margin-top: 1.5em;
+    
+}
+section::before{
+    display: table;
+    content: ""; 
+}
+section div article:nth-child(2n+1){ 
+    clear: left;
+    
+
+}
+section div article img{
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+}
+section div article p{
+    overflow: auto;
+    height: 100px;
+}
