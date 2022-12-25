@@ -1,0 +1,24 @@
+:root,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: aquamarine;
+    padding: .5em;
+}
+
+main {
+    background-color: orange;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+    padding: .5em;
+}

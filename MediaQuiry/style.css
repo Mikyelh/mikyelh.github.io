@@ -1,0 +1,92 @@
+:root{
+    box-sizing: border-box;
+    transition: all .5s ease-out;
+}
+
+*,::after,::before{
+    box-sizing: inherit;
+    transition: inherit;
+}
+/* global mibile first*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    margin: 0;
+}
+h1{
+    font-size: 1.8em;
+    margin: .9em 0 0 0;
+}
+h2{
+    font-size: 1.5em;
+    margin: .9em 0 0 0;
+}
+figure{
+    background-color: black;
+    border-radius: .4em;
+    color: white;
+    padding: .8em;
+    text-align: center;
+    margin: 0 0 .9em 0;
+}
+img{
+    flex: 1;
+    max-width:100%;
+    object-fit: cover;
+}
+.container{
+    margin: 0 .5em;
+}
+
+figure{
+    display:flex;
+    flex-direction: column;
+
+}
+
+/*effets*/
+
+figure:hover{
+    transition-duration: 1.5s;
+    background-color: red;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    body{
+
+        background-color: purple;
+    }
+    figure{
+        float:left;
+        width:calc(50% - 1.5em) ;
+        margin-right:1.5em;
+    }
+    .kittens{
+        margin-right:-1.5em;
+    }
+    .kittens ::after{
+        content: "";
+        clear: both;
+        display: block;
+     }
+   
+
+    
+}
+
+@media screen and (min-width:1024px) {
+    body{
+        background-color:rgba(0,255,0,.2);
+
+    }
+    
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+        background-color: white;
+        padding: .1em 1.5em;
+    }
+    
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>implicitigrid</title>
+    <style>
+        :root{
+            box-sizing:border-box;
+        }
+        *,::after,::before{
+            box-sizing: inherit;
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url(assests/AdobeStock_477707695_Preview.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+         .portfoglio{
+            max-width: 900px;
+            margin: 0 auto;
+        
+         }
+         figure{
+            margin: 0;
+         }
+    
+         figure figcaption{
+            margin: 0;
+            padding: .3em;
+            text-align: right;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+         }
+         /*grid*/
+         .portfoglio{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-auto-rows: 1fr;
+            grid-gap: 1em;
+         }
+         .portfoglio .featured{
+            grid-row: span 2;
+            grid-column: span 2;
+         }
+         /*grid dense*/
+         .portfoglio{
+            grid-auto-flow: dense;
+         }
+         /*fill unwanted space*/
+         figure{
+            display: flex;
+            flex-direction: column;
+            
+
+         }
+         figure img{
+            flex: 1;
+            object-fit: cover;
+
+
+         }
+
+    </style>
+</head>
+<body>
+    <div class="portfoglio">
+        <figure class="featured">
+            <img src="assests/AdobeStock_470662518_Preview.jpeg" alt="image1">
+            <figcaption>image1</figcaption>
+        </figure>
+        <figure class="featured">
+            <img src="assests/AdobeStock_476112891_Preview.jpeg" alt="image2">
+            <figcaption>image2</figcaption>
+        </figure class="featured">
+        <figure>
+            <img src="assests/AdobeStock_476155062_Preview.jpeg" alt="image3">
+            <figcaption>image3</figcaption>
+        </figure>
+        <figure>
+            <img src="assests/AdobeStock_476207570_Preview.jpeg" alt="image4">
+            <figcaption>image4</figcaption>
+        </figure>
+        <figure>
+            <img src="assests/AdobeStock_476250947_Preview.jpeg" alt="image5">
+            <figcaption>image5</figcaption>
+        </figure>
+        <figure>
+            <img src="assests/AdobeStock_476477617_Preview.jpeg" alt="image6">
+            <figcaption>image6</figcaption>
+        </figure>
+        <figure class="featured">
+            <img src="assests/AdobeStock_476736381_Preview.jpeg" alt="image7">
+            <figcaption>image7</figcaption>
+        </figure>
+        <figure class="featured">
+            <img src="assests/AdobeStock_477707695_Preview.jpeg" alt="image8">
+            <figcaption>image8</figcaption>
+        </figure>
+        <figure>
+            <img src="assests/AdobeStock_478290330_Preview.jpeg" alt="image9">
+            <figcaption>image9</figcaption>
+        </figure>
+        <figure class="featured">
+            <img src="assests/AdobeStock_478460333_Preview.jpeg" alt="image10">
+            <figcaption>image10</figcaption>
+        </figure>
+        
+    </div>
+    
+</body>
+</html>
